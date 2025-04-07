@@ -1,0 +1,1 @@
+g.bat && b.bat && t.bat

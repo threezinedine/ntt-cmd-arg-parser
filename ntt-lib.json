@@ -1,0 +1,24 @@
+{
+	"version": "1.0.0",
+	"dependencies": [
+		{
+			"folder": "googletest",
+			"github": "https://github.com/google/googletest.git",
+			"other_conditions": {
+				"MSVC": {
+					"variables": {
+						"CMAKE_CXX_FLAGS_DEBUG": "\"${CMAKE_CXX_FLAGS_DEBUG} /MDd\"",
+						"CMAKE_CXX_FLAGS_RELEASE": "\"${CMAKE_CXX_FLAGS_RELEASE} /MD\""
+					},
+					"additionals": [
+						"set(gtest_force_shared_crt ON CACHE BOOL \"Use shared CRT\" FORCE)"
+					]
+				}
+			}
+		},
+		{
+			"folder": "ntt-lib",
+			"github": "https://github.com/threezinedine/ntt-lib.git"
+		}
+	]
+}
