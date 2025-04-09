@@ -11,6 +11,14 @@
 			"preLaunchTask": "build",
 			"program": "${workspaceFolder}/build/Windows/MinGW/Debug/examples/example.exe",
 			"cwd": "${workspaceFolder}/build/Windows/MinGW/Debug/examples"
+		},
+		{
+			"name": "Parser Test",
+			"type": "cppdbg",
+			"request": "launch",
+			"preLaunchTask": "build",
+			"program": "${workspaceFolder}/build/Windows/MinGW/Debug/NTTArgParser_test.exe",
+			"cwd": "${workspaceFolder}/build/Windows/MinGW/Debug"
 		}
 	]
 }
